@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".profile.Sendemail" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:padding="5dp" >
+        <EditText
+            android:id="@+id/editTextTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:hint="searchbbc1881@gmail.com"
+            android:inputType="textEmailAddress"
+            android:singleLine="true" />
+        <EditText
+            android:id="@+id/et_subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextTo"
+            android:layout_margin="5dp"
+            android:hint="CDP Circle"
+            android:singleLine="true" />
+        <EditText
+            android:id="@+id/editTextMessage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/et_subject"
+            android:layout_margin="5dp"
+            android:gravity="top|left"
+            android:hint="Write your Feedbacks....!!"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/buttonSend"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/editTextMessage"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="#f16b05"
+            android:padding="5dp"
+            android:textColor="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:text="Send" />
+
+    </RelativeLayout>
+</ScrollView>
